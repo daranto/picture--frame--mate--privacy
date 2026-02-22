@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung - PicFrame Mate</title>
+    <title>Datenschutzerklärung - Picture Frame Mate</title>
     <style>
         * {
             margin: 0;
@@ -102,6 +102,17 @@
             margin-top: 30px;
         }
 
+        .nav-links {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #d2d2d7;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+        }
+
         a {
             color: #007aff;
             text-decoration: none;
@@ -139,7 +150,7 @@
             <p class="last-updated">Letzte Aktualisierung: 22. Februar 2026</p>
 
             <h2>Keine Datenerfassung</h2>
-            <p>PicFrame Mate erfasst, speichert oder teilt keinerlei persönliche Daten oder Nutzungsinformationen.</p>
+            <p>Picture Frame Mate erfasst, speichert oder teilt keinerlei persönliche Daten oder Nutzungsinformationen.</p>
 
             <h2>Ihre Fotos</h2>
             <ul>
@@ -165,8 +176,11 @@
                 <li>Nur verwendet, wenn Sie den Nachtmodus mit Sonnenauf-/-untergang aktivieren</li>
             </ul>
 
-            <h2>In-App-Käufe</h2>
-            <p>Die App bietet optionale Spenden über In-App-Käufe an. Diese werden vollständig von Apple abgewickelt. Die App hat keinen Zugriff auf Ihre Zahlungsinformationen.</p>
+            <h2>Drittanbieter-Dienste</h2>
+            <p>Die App nutzt keine Drittanbieter-Dienste für Analyse, Werbung oder Tracking.</p>
+
+            <h2>Änderungen dieser Datenschutzerklärung</h2>
+            <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Die jeweils aktuelle Version finden Sie immer auf dieser Seite.</p>
 
             <div class="contact">
                 <h2>Kontakt</h2>
@@ -181,7 +195,7 @@
             <p class="last-updated">Last updated: February 22, 2026</p>
 
             <h2>No Data Collection</h2>
-            <p>PicFrame Mate does not collect, store, or share any personal data or usage information.</p>
+            <p>Picture Frame Mate does not collect, store, or share any personal data or usage information.</p>
 
             <h2>Your Photos</h2>
             <ul>
@@ -207,8 +221,11 @@
                 <li>Only used when you enable night mode with sunrise/sunset</li>
             </ul>
 
-            <h2>In-App Purchases</h2>
-            <p>The app offers optional donations via in-app purchases. These are fully handled by Apple. The app does not have access to your payment information.</p>
+            <h2>Third-Party Services</h2>
+            <p>The app does not use any third-party services for analytics, advertising, or tracking.</p>
+
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We reserve the right to update this privacy policy as needed. The current version can always be found on this page.</p>
 
             <div class="contact">
                 <h2>Contact</h2>
@@ -216,19 +233,18 @@
                 <a href="mailto:question@x0g.de">question@x0g.de</a></p>
             </div>
         </div>
+
+        <div class="nav-links">
+            <a href="support.html">📱 Support & FAQ</a>
+        </div>
     </div>
 
     <script>
         function showLanguage(lang) {
-            // Hide all language sections
             document.querySelectorAll('.language-section').forEach(section => {
                 section.classList.remove('active');
             });
-
-            // Show selected language
             document.getElementById('lang-' + lang).classList.add('active');
-
-            // Update button states
             document.querySelectorAll('.language-toggle button').forEach(btn => {
                 btn.classList.remove('active');
             });

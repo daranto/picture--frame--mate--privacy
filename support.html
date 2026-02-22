@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Picture Frame Mate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1d1d1f;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: #1d1d1f;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            color: #1d1d1f;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #1d1d1f;
+        }
+
+        .language-toggle {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .language-toggle button {
+            background-color: #007aff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.2s;
+        }
+
+        .language-toggle button:hover {
+            background-color: #0051d5;
+        }
+
+        .language-toggle button.active {
+            background-color: #0051d5;
+        }
+
+        .language-section {
+            display: none;
+        }
+
+        .language-section.active {
+            display: block;
+        }
+
+        .faq-item {
+            background-color: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid #007aff;
+        }
+
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #d2d2d7;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+        }
+
+        code {
+            background-color: #f5f5f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-toggle">
+            <button onclick="showLanguage('de')" id="btn-de" class="active">Deutsch</button>
+            <button onclick="showLanguage('en')" id="btn-en">English</button>
+        </div>
+
+        <!-- German Version -->
+        <div id="lang-de" class="language-section active">
+            <h1>📱 Picture Frame Mate - Support</h1>
+            <p>Willkommen beim Support für Picture Frame Mate! Hier findest du Hilfe und Antworten auf häufig gestellte Fragen.</p>
+
+            <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
+
+            <div class="faq-item">
+                <h3>Wie füge ich ein iCloud-Album hinzu?</h3>
+                <ol>
+                    <li>Öffne die Einstellungen (tippe auf den Bildschirm, dann auf das Zahnrad)</li>
+                    <li>Gehe zu "Quellen verwalten"</li>
+                    <li>Tippe auf "iCloud Album hinzufügen"</li>
+                    <li>Lade die verfügbaren Alben und wähle dein gewünschtes Album aus</li>
+                    <li>Gib einen Namen ein und tippe auf "Hinzufügen"</li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <h3>Wie verbinde ich einen Samba/NAS-Server?</h3>
+                <ol>
+                    <li>Öffne die Einstellungen</li>
+                    <li>Gehe zu "Quellen verwalten"</li>
+                    <li>Tippe auf "Samba Share hinzufügen"</li>
+                    <li>Gib die Server-Adresse (z.B. <code>192.168.1.100</code>), Share-Name, Benutzername und Passwort ein</li>
+                    <li>Die Quelle wird zunächst deaktiviert hinzugefügt - aktiviere sie in der Liste</li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <h3>Die App stürzt beim Entfernen einer Quelle ab</h3>
+                <p>Öffne die Einstellungen, bevor du Quellen entfernst. Die Wiedergabe wird automatisch gestoppt, wenn die Einstellungen geöffnet sind.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Bilder werden nicht angezeigt</h3>
+                <p>Überprüfe folgendes:</p>
+                <ul>
+                    <li>Ist mindestens eine Quelle aktiviert?</li>
+                    <li>Hast du der App Zugriff auf deine Fotos erlaubt? (iOS Einstellungen → Picture Frame Mate → Fotos)</li>
+                    <li>Bei Samba: Sind die Zugangsdaten korrekt?</li>
+                    <li>Bei iCloud: Enthält das Album Fotos?</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>Wie funktioniert der Nachtmodus?</h3>
+                <p>Der Nachtmodus dimmt den Bildschirm oder schaltet ihn komplett aus:</p>
+                <ul>
+                    <li><strong>Sonnenauf-/-untergang:</strong> Nutzt deinen Standort für automatische Zeiten</li>
+                    <li><strong>Benutzerdefinierte Zeit:</strong> Wähle Start- und Endzeit manuell</li>
+                    <li><strong>Abdunkeln:</strong> Reduziert die Helligkeit</li>
+                    <li><strong>Schwarzer Bildschirm:</strong> Schaltet die Anzeige komplett aus</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>Kann ich mehrere Quellen gleichzeitig nutzen?</h3>
+                <p>Ja! Du kannst beliebig viele iCloud-Alben und Samba-Shares hinzufügen. Die App mischt die Bilder aus allen aktiven Quellen intelligent.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Das iPad schaltet sich automatisch aus</h3>
+                <p>Die App verhindert automatisch den Auto-Lock, solange sie läuft. Falls das Problem weiterhin besteht, überprüfe die iOS-Einstellungen unter "Anzeige & Helligkeit" → "Automatische Sperre".</p>
+            </div>
+
+            <h2>🐛 Problem melden</h2>
+            <p>Wenn du einen Fehler gefunden hast oder ein Problem auftritt:</p>
+            <ol>
+                <li>Stelle sicher, dass du die neueste Version der App verwendest</li>
+                <li>Notiere die genauen Schritte, um das Problem zu reproduzieren</li>
+                <li>Kontaktiere uns per E-Mail (siehe unten)</li>
+            </ol>
+
+            <h2>💡 Feature-Vorschläge</h2>
+            <p>Hast du eine Idee für eine neue Funktion? Wir freuen uns über dein Feedback! Schreib uns eine E-Mail mit deinem Vorschlag.</p>
+
+            <div class="contact-box">
+                <h2>📧 Kontakt</h2>
+                <p>Bei Fragen, Problemen oder Feedback kontaktiere uns unter:<br>
+                <strong><a href="mailto:question@x0g.de">question@x0g.de</a></strong></p>
+                <p>Wir antworten in der Regel innerhalb von 24-48 Stunden.</p>
+            </div>
+
+            <h2>📄 Weitere Informationen</h2>
+            <ul>
+                <li><strong>Version:</strong> 1.0</li>
+                <li><strong>Entwickler:</strong> Robin Schmidt</li>
+                <li><strong>Open Source Lizenzen:</strong> Diese App nutzt AMSMB2 (LGPL v2.1) für Netzwerkverbindungen</li>
+            </ul>
+        </div>
+
+        <!-- English Version -->
+        <div id="lang-en" class="language-section">
+            <h1>📱 Picture Frame Mate - Support</h1>
+            <p>Welcome to Picture Frame Mate support! Here you'll find help and answers to frequently asked questions.</p>
+
+            <h2>❓ Frequently Asked Questions (FAQ)</h2>
+
+            <div class="faq-item">
+                <h3>How do I add an iCloud album?</h3>
+                <ol>
+                    <li>Open Settings (tap the screen, then tap the gear icon)</li>
+                    <li>Go to "Manage Sources"</li>
+                    <li>Tap "Add iCloud Album"</li>
+                    <li>Load available albums and select your desired album</li>
+                    <li>Enter a name and tap "Add"</li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I connect to a Samba/NAS server?</h3>
+                <ol>
+                    <li>Open Settings</li>
+                    <li>Go to "Manage Sources"</li>
+                    <li>Tap "Add Samba Share"</li>
+                    <li>Enter server address (e.g., <code>192.168.1.100</code>), share name, username, and password</li>
+                    <li>The source will be added as disabled - activate it in the list</li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <h3>The app crashes when removing a source</h3>
+                <p>Open Settings before removing sources. The slideshow is automatically stopped when Settings are open.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Images are not displayed</h3>
+                <p>Check the following:</p>
+                <ul>
+                    <li>Is at least one source enabled?</li>
+                    <li>Did you grant the app access to your photos? (iOS Settings → Picture Frame Mate → Photos)</li>
+                    <li>For Samba: Are the credentials correct?</li>
+                    <li>For iCloud: Does the album contain photos?</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>How does Night Mode work?</h3>
+                <p>Night Mode dims the screen or turns it completely off:</p>
+                <ul>
+                    <li><strong>Sunset to Sunrise:</strong> Uses your location for automatic times</li>
+                    <li><strong>Custom Time:</strong> Choose start and end times manually</li>
+                    <li><strong>Dim:</strong> Reduces brightness</li>
+                    <li><strong>Black Screen:</strong> Turns the display completely off</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I use multiple sources simultaneously?</h3>
+                <p>Yes! You can add as many iCloud albums and Samba shares as you like. The app intelligently mixes images from all active sources.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>The iPad turns off automatically</h3>
+                <p>The app automatically prevents auto-lock while running. If the problem persists, check iOS Settings under "Display & Brightness" → "Auto-Lock".</p>
+            </div>
+
+            <h2>🐛 Report a Problem</h2>
+            <p>If you've found a bug or are experiencing an issue:</p>
+            <ol>
+                <li>Make sure you're using the latest version of the app</li>
+                <li>Note the exact steps to reproduce the problem</li>
+                <li>Contact us via email (see below)</li>
+            </ol>
+
+            <h2>💡 Feature Suggestions</h2>
+            <p>Have an idea for a new feature? We'd love to hear your feedback! Send us an email with your suggestion.</p>
+
+            <div class="contact-box">
+                <h2>📧 Contact</h2>
+                <p>For questions, problems, or feedback, contact us at:<br>
+                <strong><a href="mailto:question@x0g.de">question@x0g.de</a></strong></p>
+                <p>We typically respond within 24-48 hours.</p>
+            </div>
+
+            <h2>📄 Additional Information</h2>
+            <ul>
+                <li><strong>Version:</strong> 1.0</li>
+                <li><strong>Developer:</strong> Robin Schmidt</li>
+                <li><strong>Open Source Licenses:</strong> This app uses AMSMB2 (LGPL v2.1) for network connections</li>
+            </ul>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">🔒 Privacy Policy</a>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(lang) {
+            document.querySelectorAll('.language-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.querySelectorAll('.language-toggle button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>

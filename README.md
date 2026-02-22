@@ -1,13 +1,44 @@
-# Picture Frame Mate - Privacy Policy
+# Picture Frame Mate - Privacy & Support
 
-This repository contains the privacy policy for the Picture Frame Mate iOS app.
+This repository contains the privacy policy and support documentation for Picture Frame Mate.
 
-**View the privacy policy:** [https://daranto.github.io/picture-frame-mate-privacy/](https://daranto.github.io/picture-frame-mate-privacy/)
+## 🔗 Links
 
-## About Picture Frame Mate
+- **Privacy Policy:** https://daranto.github.io/picture--frame--mate--privacy/
+- **Support & FAQ:** https://daranto.github.io/picture--frame--mate--privacy/support.html
 
-Picture Frame Mate is a digital photo frame app for iOS that displays your photos from iCloud albums or Samba network shares.
+## 📱 About Picture Frame Mate
 
-## Privacy
+Picture Frame Mate transforms your iPad into a beautiful digital photo frame with support for:
+- iCloud Photo Albums
+- Samba/SMB Network Shares
+- Multiple photo sources
+- Customizable transitions and display modes
+- Night mode with automatic dimming
+- And much more!
 
-Picture Frame Mate does not collect, store, or share any personal data. All photos remain on your device or in your own cloud storage. For full details, see the [privacy policy](https://daranto.github.io/picture-frame-mate-privacy/).
+## 🔒 Privacy First
+
+Picture Frame Mate does **not**:
+- Collect any personal data
+- Send photos to external servers
+- Use analytics or tracking
+- Share your information with third parties
+
+All your photos remain on your device or in your chosen sources.
+
+## 📧 Contact
+
+For questions, support, or feedback:
+**question@x0g.de**
+
+## 📄 License
+
+- App: Developed by Robin Schmidt
+- This repository: MIT License
+- The app uses AMSMB2 (LGPL v2.1) for network connections
+
+---
+
+Version: 1.0  
+Last Updated: February 22, 2026
